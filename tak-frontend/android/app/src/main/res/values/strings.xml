@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">takshila-registration</string>
+    <string name="title_activity_main">takshila-registration</string>
+    <string name="package_name">in.takshila.registration</string>
+    <string name="custom_url_scheme">in.takshila.registration</string>
+</resources>
