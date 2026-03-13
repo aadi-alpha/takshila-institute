@@ -29,10 +29,10 @@ body {
 
 .stu-reg-nav {
   overflow-x: hidden;
-
+margin-top: -70px;
   padding-inline: 5vw;
   padding-block: 20px;
-  margin-top: 70px;
+  
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -755,7 +755,7 @@ button:active {
 }
 
 .top-nav-admin {
-  position: fixed;
+  
   top: 0;
   display: flex;
   width: 100vw;
@@ -793,12 +793,13 @@ button:active {
 }
 .top-left{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 93vw;
 }
 .top-nav-admin .top-left div:nth-child(1){
   display: flex;
-  justify-content: space-between;
+flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 15px;
 
@@ -823,12 +824,19 @@ button:active {
 .top-nav-admin .top-left .icon {
   color: #1c3481;
   padding: 15px;
+  box-sizing: border-box;
   font-size: clamp(16px, 2vw, 18px);
   background-color: #eeeeee;
   border-radius: 50%;
 
-}
 
+}
+.top-nav-admin .top-left .admin-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .top-nav-admin .top-left h3 {
   color: #1c3481;
   font-size: clamp(16px, 2vw, 20px);
@@ -841,7 +849,7 @@ button:active {
   font-weight: 500;
 }
 
-.top-nav-admin .top-right {
+ .top-right {
   position: fixed;
   bottom: 20px;
   left: 20px;
@@ -860,6 +868,7 @@ button:active {
   height: 50px;
   width: 50px;
   overflow: hidden;
+  z-index: 9999999;
 }
 
 
@@ -874,8 +883,8 @@ button:active {
   padding-inline: 3vw;
   padding-block: 30px;
   position: fixed;
-  height: calc(100vh - 70px);
-  top: 75px;
+  height: 100vh;
+  top: 0;
   z-index: 999;
   gap: 40px;
 }
@@ -955,7 +964,7 @@ button:active {
 
 .admission-management {
 
-  margin-top: 110px;
+  margin-top: 20px;
 
   display: flex;
   flex-direction: column;
@@ -1546,7 +1555,7 @@ button:active {
 
 .admin-creation {
   padding-inline: 3vw;
-  margin-top: 110px;
+  margin-top: 20px;
   padding-bottom: 30px;
 
 }
@@ -2074,7 +2083,7 @@ button.active {
 
 .records-manage {
   padding-inline: 3vw;
-  margin-top: 110px;
+  margin-top: 20px;
   padding-bottom: 30px;
 }
 

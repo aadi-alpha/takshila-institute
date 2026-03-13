@@ -23,11 +23,11 @@ const TopLeftNav = () => {
                     setUserName(logedInUser.data.UserTakshila.name)
                 } else {
                     alert('server side error')
-                     setLoader(false)
+                    setLoader(false)
                 }
             } catch (error) {
                 alert("server side error ", error)
-                 setLoader(false)
+                setLoader(false)
             }
             setLoader(false)
         }
@@ -36,23 +36,24 @@ const TopLeftNav = () => {
     }, [id])
     return (
         <div>
-           {loader===true?(
-            <Loader />
-           ):(
-             <div className="top-left">
-             <div>
-                   <div className="icon"><i className="fa-solid fa-hat-wizard"></i></div>
-                <div className="admin-text">
-                    <h3>{UserName}</h3>
-                    <p>Institute Management</p>
+            {loader === true ? (
+                <Loader />
+            ) : (
+                <div className="top-left">
+
+
+                    <div>
+                        <div className="icon"><i className="fa-solid fa-hat-wizard"></i></div>
+                        <div className="admin-text">
+                            <h3>{UserName}</h3>
+                            <p>Institute Management</p>
+                        </div>
+                    </div>
                 </div>
-             </div>
-                <div className="logo-dash"><img src={logo} alt="" /></div>
-            </div>
-            
-           )}
-           
-           
+
+            )}
+
+
         </div>
     )
 }

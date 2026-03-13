@@ -19,14 +19,17 @@ const NavAdmin = () => {
       <div className="top-nav-admin">
         <TopLeftNav />
 
+
+      
+      </div>
         <div className="top-right" onClick={toggleMenu}>
           <div className={`hamburger ${open ? 'open' : ''}`} >
             <div></div>
             <div></div>
             <div></div>
+
           </div>
         </div>
-      </div>
 
       <div className={`left-nav-admin ${open ? 'show' : ''}`}>
         <ul>
