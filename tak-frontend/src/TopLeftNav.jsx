@@ -22,11 +22,11 @@ const TopLeftNav = () => {
                 if (logedInUser) {
                     setUserName(logedInUser.data.UserTakshila.name)
                 } else {
-                    alert('server side error')
+                    alert('Login again...')
                     setLoader(false)
                 }
             } catch (error) {
-                alert("server side error ", error)
+                alert("Login again...", error)
                 setLoader(false)
             }
             setLoader(false)
